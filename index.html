@@ -16,17 +16,17 @@
         
         <div class="flex form-input">
             <div class="header-form">ชื่อ</div>
-            <input class="form" type="text">
+            <input class="form" name = "firstName" type="text">
         </div>
 
         <div class="flex form-input">
             <div class="header-form">นามสกุล</div>
-            <input class="form" type="text">
+            <input class="form" name = "lastName"type="text">
         </div>
 
         <div class="flex form-input">
             <div class="header-form">อายุ</div>
-            <input class="form" type="number" min = "0" max = "100">
+            <input class="form" name = "age" type="number" min = "0" max = "100">
         </div>
 
         <div class="flex gender form-input">
@@ -47,26 +47,26 @@
         <div class="form-input">
             <div class="header-form">งานอดิเรก</div>
             <div>
-                <input name = "interest" type="checkbox">วาดรูป
+                <input name = "interest" type="checkbox" value="วาดรูป">วาดรูป
             </div>
             <div>
-                <input name = "interest" type="checkbox">ฟังเพลง
+                <input name = "interest" type="checkbox" value="ฟังเพลง">ฟังเพลง
             </div>
             <div>
-                <input name = "interest" type="checkbox">เล่นเกม
+                <input name = "interest" type="checkbox" value="เล่นเกม">เล่นเกม
             </div>
         </div>
 
         <div class ="form-input">
             คำอธิบาย
-            <textarea></textarea>
+            <textarea name="description"></textarea>
         </div>
 
         <div class="center">
-            <button class="button">ส่งข้อมูล</button>
+            <button onclick = "submitData()" class="button">ส่งข้อมูล</button>
         </div>
     
     </div>
-
+    <script src="index.js"></script>
 </body>
 </html>
