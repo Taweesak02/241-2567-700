@@ -33,13 +33,13 @@
             <div class="header-form">เพศ</div>
             <div class = "flex">
                 <div>
-                    <input name="gender" type="radio">ชาย
+                    <input name="gender" value="ชาย" type="radio">ชาย
                 </div>
                 <div>
-                    <input name="gender" type="radio">หญิง
+                    <input name="gender" value="หญิง" type="radio">หญิง
                 </div>
                 <div>
-                    <input name="gender" type="radio">ไม่ระบุ
+                    <input name="gender" value="ไม่ระบุ" type="radio">ไม่ระบุ
                 </div>    
             </div>
         </div>
@@ -62,11 +62,14 @@
             <textarea name="description"></textarea>
         </div>
 
+        <div id = "message" class="message"></div>
+
         <div class="center">
             <button onclick = "submitData()" class="button">ส่งข้อมูล</button>
         </div>
     
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
