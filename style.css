@@ -69,6 +69,29 @@ input.form, textarea{
     display: block
 }
 
+table{
+    align:center;
+    width: 50%;
+    margin : 30px auto;
+    border: 5px solid black;
+    border-collapse: collapse;
+    
+}
+th{
+    background-color: rgb(112, 116, 232);
+    border: 2px solid black;
+    border-style: solid;
+    padding: 5px;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+    border-style: dotted;
+    padding: 5px;
+}
+
+
 @media screen and (max-width: 768px){
    .flex {
         flex-direction: column;

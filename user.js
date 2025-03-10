@@ -15,17 +15,24 @@ const loadData = async () =>{
 
     //2. นำ user ทั้งหมด โหลด กลับเข้าไปใน html 
 
-    let htmlData = '<div>'
-    
+    let htmlData = `<table>`
+    htmlData += `<tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>`
+
     for (let i = 0; i < response.data.length; i++) {
         let user = response.data[i]
-        htmlData += `<div>
-        ${user.id} ${user.firstname} ${user.lastname}
-        <a href = 'index.html?id=${user.id}'><button>Edit</button></a>
-        <button class = 'delete' data-id='${user.id}'>Delete</button>
-        </div>`
+        htmlData += `<tr>
+        <td>${user.id}</td>
+        <td>${user.firstname} ${user.lastname}</td>
+        <td><a href = 'index.html?id=${user.id}'><button>Edit</button></a></td>
+        <td><button class = 'delete' data-id='${user.id}'>Delete</button></td>
+        </tr>`
     }
-    htmlData += '</div>'
+    htmlData += '</table>'
     userDOM.innerHTML = htmlData;
 
     //3. ลบ user
