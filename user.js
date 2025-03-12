@@ -16,7 +16,7 @@ const loadData = async () =>{
     //2. นำ user ทั้งหมด โหลด กลับเข้าไปใน html 
 
     let htmlData = `<table>`
-    htmlData += `<tr>
+    htmlData += `<tr id='table_header'>
                     <th>ID</th>
                     <th>NAME</th>
                     <th>EDIT</th>
@@ -28,8 +28,8 @@ const loadData = async () =>{
         htmlData += `<tr>
         <td>${user.id}</td>
         <td>${user.firstname} ${user.lastname}</td>
-        <td><a href = 'index.html?id=${user.id}'><button>Edit</button></a></td>
-        <td><button class = 'delete' data-id='${user.id}'>Delete</button></td>
+        <td><a href = 'index.html?id=${user.id}'><button id='edit_button'>Edit</button></a></td>
+        <td><button class = 'delete' id = 'del_button' data-id='${user.id}'>Delete</button></td>
         </tr>`
     }
     htmlData += '</table>'

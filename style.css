@@ -69,23 +69,113 @@ input.form, textarea{
     display: block
 }
 
+.pageswap{
+    text-align:center;
+    max-width: 150px;
+    background-color:rgb(212, 184, 240);
+    padding:10px;
+    border-radius: 10px;
+}
+
+.pageswap:hover{
+    background-color:#ff7aa9;
+}
+.pageswap:active{
+    background-color:#7b609b;
+}
+
+#userbg{
+    background-image:url("picture/user_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#mainbg{
+    background-image:url("picture/main_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#user_table_bg{
+    margin-left:200px;
+    margin-right:200px;
+    margin-top: 20px;
+    padding: 50px;
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+#edit_button{
+    border-radius: 10px;
+    width: 30%;
+    background-color:#65ebaf;
+    border-style: none;
+    padding: 10px 20px;
+    transition: width 0.5s;
+}
+#edit_button:hover{
+    width: 50%;
+    background-color:#3f9e77;
+    
+}
+#edit_button:active{
+    background-color:#41ff41;
+}
+
+#del_button{
+    border-radius: 10px;
+    width: 30%;
+    background-color:#e85a5a;
+    border-style: none;
+    padding: 10px 20px;
+    transition: width 0.5s;
+}
+#del_button:hover{
+    width: 50%;
+    background-color:#a33a3a;
+}
+#del_button:active{
+    background-color:#ff4141;
+}
+
+a{
+    color: #e9f2f0;
+    text-decoration: none;
+
+}
+
+
 table{
     align:center;
-    width: 50%;
+    width: 90%;
     margin : 30px auto;
     border: 5px solid black;
     border-collapse: collapse;
+    transition: 0.5s;
+}
+
+tr:hover{
+    background-color: rgb(250, 252, 147);
+}
+
+tr th{
+    background-color: rgb(112, 116, 232);
     
 }
+
 th{
-    background-color: rgb(112, 116, 232);
     border: 2px solid black;
     border-style: solid;
     padding: 5px;
 }
 
-td{
+tr{
+    background-color: rgb(255, 255, 255);
     text-align: center;
+}
+
+td{
     border: 2px solid black;
     border-style: dotted;
     padding: 5px;
