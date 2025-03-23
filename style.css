@@ -16,6 +16,7 @@ body{
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(255, 98, 98, 0.96), rgba(101, 35, 254, 0.8));
     padding: 20px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -29,7 +30,7 @@ body{
     border-style: outset;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .header-form{
@@ -46,7 +47,7 @@ body{
 
 input.form, textarea{
     border: 1px solid black;
-    width: 100%;
+    width: 80%;
 }
 
 .center{
